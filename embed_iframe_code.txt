@@ -1,0 +1,13 @@
+<!--
+  使い方:
+  1. fukushiyougu_app.html または docs/index.html を公開できる場所にアップロードします。
+  2. 下の src の URL を、アップロード後のURLに差し替えます。
+  3. このコードを、公開したいサイトのHTML埋め込み欄に貼り付けます。
+-->
+
+<iframe
+  src="https://example.com/fukushiyougu_app.html"
+  title="福祉用具おすすめナビ"
+  style="width: 100%; min-height: 1200px; border: 0;"
+  loading="lazy"
+></iframe>
