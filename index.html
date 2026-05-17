@@ -624,30 +624,57 @@ const products = [
   },
   {
     category: "wheelchair",
-    name: "ジスタ WAW33",
-    maker: "幸和製作所",
-    specs: ["押し手高さ: 700-910mm", "重量: 5.9kg", "最大積載荷重: 5kg"],
-    tags: ["車いす対応", "屋内外", "軽量"],
-    fit: { mobility: ["wheelchair"], place: ["both", "outdoor"], compact: true },
-    reason: "車いす利用者の歩行練習や短距離移動を支えたい場合に選びやすい軽量歩行車です。",
+    name: "ステイヤー SY22-40SB",
+    maker: "カワムラサイクル",
+    specs: ["標準タイプ", "自走・介助兼用", "耐荷重: 100kg"],
+    tags: ["車いす", "自走", "標準"],
+    fit: { mobility: ["wheelchair", "assisted"], place: ["indoor", "both"], compact: true },
+    reason: "車いす中心の生活で、まず標準的な自走・介助兼用車いすを検討したい場合に向きます。屋内での移動や短距離外出にも使いやすい基本候補です。",
   },
   {
     category: "wheelchair",
-    name: "ジスタワイド WAW36",
-    maker: "幸和製作所",
-    specs: ["押し手高さ: 775-985mm", "重量: 6.3kg", "最大使用者体重: 100kg"],
-    tags: ["ワイド", "屋内外", "座面あり"],
-    fit: { mobility: ["wheelchair", "assisted"], place: ["both"], tall: true },
-    reason: "体格が大きめの人でも使いやすいワイドタイプです。座面付きで、屋内外の移動中に休憩しやすい構成です。",
+    name: "6輪車いす SKR-5",
+    maker: "松永製作所",
+    specs: ["6輪タイプ", "小回り重視", "耐荷重: 100kg"],
+    tags: ["車いす", "屋内", "小回り"],
+    fit: { mobility: ["wheelchair"], place: ["indoor"], narrow: true, compact: true },
+    reason: "通路や居室が狭い住環境で、車いすの方向転換や小回りを重視したい場合に合います。屋内中心の車いす利用に向いた候補です。",
   },
   {
     category: "wheelchair",
-    name: "シトレア WAW23",
-    maker: "幸和製作所",
-    specs: ["押し手高さ: 840-1120mm", "重量: 約7.9kg", "最大使用者体重: 75kg"],
-    tags: ["前腕支持", "屋内外", "コンパクト"],
-    fit: { mobility: ["wheelchair", "assisted"], place: ["both"], armSupport: true },
-    reason: "前腕支持が必要な人向けの軽量・コンパクトな歩行車です。車いす中心でも、立位訓練や短距離移動の候補になります。",
+    name: "シン・ウルトラ NA-SU2W",
+    maker: "日進医療器",
+    specs: ["エアリー仕様", "姿勢保持を支援", "耐荷重: 100kg"],
+    tags: ["車いす", "姿勢保持", "クッション性"],
+    fit: { mobility: ["wheelchair", "bedbound"], place: ["indoor", "both"], caregiver: true },
+    reason: "長時間座る場面や、座位姿勢の安定を重視したい場合に向きます。体への負担と介助のしやすさを考えた車いす候補です。",
+  },
+  {
+    category: "wheelchair",
+    name: "ネクストコア マルチ NEXT2-31BE",
+    maker: "松永製作所",
+    specs: ["多機能モジュール型", "座位調整に対応", "耐荷重: 100kg"],
+    tags: ["車いす", "多機能", "姿勢調整"],
+    fit: { mobility: ["wheelchair", "bedbound"], place: ["indoor", "both"], caregiver: true },
+    reason: "身体状況に合わせた調整や姿勢保持を重視したい場合に検討しやすい多機能タイプです。介助者がいる利用環境にも合います。",
+  },
+  {
+    category: "wheelchair",
+    name: "アウルCARE 40F",
+    maker: "加地",
+    specs: ["車いすクッション", "厚さ: 4cm", "床ずれ予防・座位安定"],
+    tags: ["車いすクッション", "付属品", "姿勢保持"],
+    fit: { mobility: ["wheelchair", "bedbound"], place: ["indoor", "both"], compact: true },
+    reason: "車いす座位でお尻への圧や姿勢崩れが気になる場合の付属品候補です。車いす本体とあわせて検討します。",
+  },
+  {
+    category: "wheelchair",
+    name: "アウルサポート バッククッション",
+    maker: "加地",
+    specs: ["背クッション", "背中・体幹を支援", "車いす付属品"],
+    tags: ["車いすクッション", "付属品", "体幹支持"],
+    fit: { mobility: ["wheelchair", "bedbound"], place: ["indoor", "both"], caregiver: true },
+    reason: "背中や体幹の支えが必要で、車いすでの姿勢を安定させたい場合に向きます。座面クッションとあわせた調整にも使いやすい付属品です。",
   },
   {
     category: "slope",
@@ -780,9 +807,12 @@ const productImages = {
   "たよレールSOTOE ロング型 BZK-05": "assets/products/tayorail_sotoe.jpg",
   "BSモア6 625-160": "assets/products/bs_more_6.jpg",
   "玄関用ベストサポート手すり オプション踏台": "assets/products/best_support_step.jpg",
-  "ジスタ WAW33": "assets/products/waw33.jpg",
-  "ジスタワイド WAW36": "assets/products/waw36.jpg",
-  "シトレア WAW23": "assets/products/waw23.jpg",
+  "ステイヤー SY22-40SB": "assets/products/wheelchair_stayer_sy22.jpg",
+  "6輪車いす SKR-5": "assets/products/wheelchair_skr5.jpg",
+  "シン・ウルトラ NA-SU2W": "assets/products/wheelchair_shin_ultra.jpg",
+  "ネクストコア マルチ NEXT2-31BE": "assets/products/wheelchair_nextcore_multi.jpg",
+  "アウルCARE 40F": "assets/products/cushion_owlcare_40f.jpg",
+  "アウルサポート バッククッション": "assets/products/cushion_owl_support.jpg",
   "可搬型スロープ ラインナップ": "assets/products/portable_slope.jpg",
   "BS小路 626-110": "assets/products/bs_koji.jpg",
   "移乗サポートロボット Hug L1": "assets/products/hug.jpg",
@@ -838,6 +868,8 @@ function scoreProduct(product, state) {
   if (product.category === "lift" && state.bathing !== "independent") score += 12;
   if (product.tags.includes("入浴") && state.bathing === "independent") score -= 8;
   if (product.category === "wheelchair" && state.mobility === "wheelchair") score += 16;
+  if (product.tags.includes("車いすクッション") && ["wheelchair", "bedbound"].includes(state.mobility)) score += 12;
+  if (product.tags.includes("車いすクッション") && state.mobility === "independent") score -= 8;
   if (product.category === "walking" && state.mobility === "bedbound") score -= 40;
 
   return Math.max(0, Math.min(100, score));
@@ -851,8 +883,16 @@ function render() {
       const recommendations = products
         .filter((product) => product.category === category.id)
         .map((product) => ({ ...product, score: scoreProduct(product, state) }))
-        .sort((a, b) => b.score - a.score)
-        .slice(0, 3);
+        .sort((a, b) => b.score - a.score);
+
+      let selected = recommendations.slice(0, 3);
+      if (category.id === "wheelchair") {
+        const accessory = recommendations.find((product) => product.tags.includes("付属品") || product.tags.includes("車いすクッション"));
+        const hasAccessory = selected.some((product) => product.tags.includes("付属品") || product.tags.includes("車いすクッション"));
+        if (accessory && !hasAccessory) {
+          selected = [selected[0], selected[1], accessory].filter(Boolean);
+        }
+      }
 
       return `
         <article class="category" style="--category-color:${category.color}">
@@ -864,7 +904,7 @@ function render() {
             <span class="count">上位3件</span>
           </header>
           <div class="cards">
-            ${recommendations.map((product, index) => cardTemplate(product, index + 1)).join("")}
+            ${selected.map((product, index) => cardTemplate(product, index + 1)).join("")}
           </div>
         </article>
       `;
@@ -927,6 +967,8 @@ render();
 </script>
   </body>
 </html>
+
+
 
 
 
